@@ -1,0 +1,46 @@
+<item>
+  <label>Spellen</label>
+  <property name="menu_id">$NUMBER[17000]</property>
+  <onclick>ActivateWindow(10001,plugin://plugin.program.advanced.emulator.launcher/,return)</onclick>
+  <thumb>icons/sidemenu/games.png</thumb>
+  <property name="id">games</property>
+</item>
+
+<control type="group" id="18000">
+  <visible>String.IsEqual(Container(9000).ListItem.Property(id),games)</visible>
+  <include content="Visible_Right_Delayed">
+    <param name="id" value="games"/>
+  </include>
+  <control type="grouplist" id="18001">
+    <include>WidgetGroupListCommon</include>
+    <pagecontrol>18010</pagecontrol>
+    <include content="WidgetListCategories">
+      <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/"/>
+      <param name="widget_header" value="Consoles"/>
+      <param name="widget_target" value="games"/>
+      <param name="list_id" value="18300"/>
+      <param name="icon_height" value="70"/>
+    </include>
+    <include content="WidgetListSquare">
+      <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_FAVOURITES"/>
+      <param name="widget_header" value="$LOCALIZE[10134]"/>
+      <param name="widget_target" value="games"/>
+      <param name="sortby" value="title"/>
+      <param name="sortorder" value="ascending"/>
+      <param name="list_id" value="22500"/>
+      <param name="fallback_icon" value="DefaultGames.png"/>
+    </include>
+    <include content="WidgetListSquare">
+      <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_RECENTLY_PLAYED"/>
+      <param name="widget_header" value="Laatst gespeeld"/>
+      <param name="widget_target" value="games"/>
+      <param name="sortby" value="title"/>
+      <param name="sortorder" value="ascending"/>
+      <param name="list_id" value="22600"/>
+      <param name="fallback_icon" value="DefaultGames.png"/>
+    </include>
+  </control>
+  <include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+    <param name="scrollbar_id" value="18010"/>
+  </include>
+</control>
