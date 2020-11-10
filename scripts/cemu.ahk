@@ -8,6 +8,11 @@ XInput_Init()
 
 Run "C:\Program Files\Cemu\Cemu.exe" -f -g "%rom%"
 
+ProcessExist(Name){
+	Process,Exist,%Name%
+	return Errorlevel
+}
+
 Loop {
   Loop, 4 {
     if State := XInput_GetState(A_Index-1) {
@@ -15,11 +20,9 @@ Loop {
         Process, Close, Cemu.exe
       }
     }
+    If !ProcessExist("Cemu.exe")
+    ExitApp
   }
   Sleep, 250
 }
 return
-
-Process, Wait, Cemu.exe
-Process, WaitClose, Cemu.exe
-ExitApp
