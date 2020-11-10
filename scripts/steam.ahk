@@ -7,8 +7,8 @@ Run "C:\Program Files (x86)\Steam\Steam.exe" -applaunch %steamdID% -nolauncher -
 
 if splashWindowTitle
 {
-	WinWaitActive %splashWindowTitle%
-	Send {Enter}
+  WinWaitActive %splashWindowTitle%
+  Send {Enter}
 }
 
 Process, Wait, %exeTitle%

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- Exported by AEL on 2020-11-10 14:53:25 -->
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Wii U</name>
+  <category>root_category</category>
+  <year>2012</year>
+  <genre>Eight generation console</genre>
+  <developer>Nintendo</developer>
+  <rating />
+  <plot>The Wii U (WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft&apos;s Xbox One and Sony&apos;s PlayStation 4. The Wii U is the first Nintendo console to support HD graphics. The system&apos;s primary controller is the Wii U GamePad, which features an embedded touchscreen, directional buttons, analog sticks, and action buttons. The screen can be used either as a supplement to the main display or in supported games to play the game directly on the GamePad. The Wii U Pro Controller can be used in its place as a more traditional alternative. The Wii U is backward compatible with all Wii software and accessories. Games can support any combination of the GamePad, Wii Remote, Nunchuk, Balance Board, or Nintendo&apos;s Classic Controller or Wii U Pro Controller. Online functionality centers around the Nintendo Network platform and Miiverse, an integrated social networking service which allows users to share content in game-specific communities. </plot>
+  <platform>Nintendo Wii U</platform>
+  <application>C:\Program Files\Cemu\Cemu.exe</application>
+  <args> -f -g &quot;$rom$&quot;</args>
+  <args_extra />
+  <ROM_path>D:\WiiU\Games\</ROM_path>
+  <ROM_extra_path />
+  <ROM_ext>wud|rpx|WUD|PRX</ROM_ext>
+  <ROM_asset_path>C:\Users\Michiel\Pictures\Kodi\Games\Wii U</ROM_asset_path>
+  <Asset_Prefix />
+  <s_icon>special://profile/addon_data\plugin.program.advanced.emulator.launcher\asset-launchers\Wii U_0b3_icon.png</s_icon>
+  <s_fanart />
+  <s_banner />
+  <s_poster />
+  <s_clearlogo />
+  <s_controller />
+  <s_trailer />
+</launcher>
+</advanced_emulator_launcher_configuration>
