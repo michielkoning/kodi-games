@@ -2,17 +2,16 @@
 #SingleInstance force
 #Include Shared/XInput.ahk
 
-rom = %1%
-
 XInput_Init()
 
-Run "C:\Program Files\Cemu\Cemu.exe" -f -g "%rom%"
+Run, "D:\Wii\Dolphin.exe" "%rom%"
 
 Loop {
   Loop, 4 {
     if State := XInput_GetState(A_Index-1) {
       if (State.wButtons = 48 && State.bLeftTrigger > 250 && State.bRightTrigger > 250) {
-        Process, Close, Cemu.exe
+        WinClose Dolphin.exe
+        break
       }
     }
   }
@@ -20,6 +19,6 @@ Loop {
 }
 return
 
-Process, Wait, Cemu.exe
-Process, WaitClose, Cemu.exe
+Process, Wait, Dolphin.exe
+Process, WaitClose, Dolphin.exe
 ExitApp
