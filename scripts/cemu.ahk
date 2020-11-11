@@ -21,7 +21,7 @@ Loop {
       }
     }
     If !ProcessExist("Cemu.exe")
-    ExitApp
+      ExitApp
   }
   Sleep, 250
 }

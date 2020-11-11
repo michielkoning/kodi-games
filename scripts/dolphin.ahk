@@ -21,7 +21,7 @@ Loop {
       }
     }
     If !ProcessExist("Dolphin.exe")
-    ExitApp
+      ExitApp
   }
   Sleep, 250
 }

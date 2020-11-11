@@ -21,7 +21,7 @@ Loop {
       }
     }
     If !ProcessExist("snes9x-x64.exe")
-    ExitApp
+      ExitApp
   }
   Sleep, 250
 }

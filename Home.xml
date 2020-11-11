@@ -23,7 +23,7 @@
     </include>
     <include content="WidgetListSquare">
       <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_FAVOURITES"/>
-      <param name="widget_header" value="$LOCALIZE[10134]"/>
+      <param name="widget_header" value="Favorieten"/>
       <param name="widget_target" value="games"/>
       <param name="sortby" value="title"/>
       <param name="sortorder" value="ascending"/>
@@ -34,8 +34,8 @@
       <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_RECENTLY_PLAYED"/>
       <param name="widget_header" value="Laatst gespeeld"/>
       <param name="widget_target" value="games"/>
-      <param name="sortby" value="title"/>
-      <param name="sortorder" value="ascending"/>
+      <param name="sortby" value="lastused"/>
+      <param name="sortorder" value="descending"/>
       <param name="list_id" value="22600"/>
       <param name="fallback_icon" value="DefaultGames.png"/>
     </include>
