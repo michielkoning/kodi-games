@@ -32,6 +32,7 @@
     </include>
     <include content="WidgetListSquare">
       <param name="content_path" value="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_RECENTLY_PLAYED"/>
+      <param name="widget_limit" value="10"/>
       <param name="widget_header" value="Laatst gespeeld"/>
       <param name="widget_target" value="games"/>
       <param name="sortby" value="lastused"/>
